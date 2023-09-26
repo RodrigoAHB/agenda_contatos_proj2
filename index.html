@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda de contatos</h1>
+        </header>
+        <main>
+            <form>
+                <input type="text" name="contactName" id="contactName" placeholder="Nome do contato" required>
+                <input type="tel" name="contactNumber" id="contactNumber" placeholder="(DD)91234-5678" required maxlength="14">
+                <input type="submit" value="Adicionar" id="addBtn">
+            </form>
+            <table cellspacing = "0">
+                <thead>
+                    <tr>
+                        <th class="tableName">Nome</th>
+                        <th>Telefone de contato</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>`
